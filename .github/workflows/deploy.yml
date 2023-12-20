@@ -16,4 +16,6 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 30m
         script: | 
+          cd ~/droplet-deploy
+          git pull origin master
           echo "Nice Job!!!"
