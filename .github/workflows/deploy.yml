@@ -4,7 +4,7 @@ on:
       - master
 jobs:
   run_pull:
-    name: run pull
+    name: run pulls
     runs-on: ubuntu-latest
     steps:
     - name: install ssh keys
