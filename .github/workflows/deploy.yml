@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: install ssh keys
-      uses: appleboy/ssh-action@v1.0.0
+      uses: appleboy/ssh-action@v0.1.10
       with:
-        host: ${{secrets.HOST}}
-        key: ${{secrets.SSH_PRIVATE_KEY}}
-        username: ${{secrets.USER}}
-        script: |
-          cd ~/droplet-deploy/
-          git pull origin master
-          echo "ok?"
+        host: 139.59.133.32
+        username: david
+        key: ${{ secrets.SSH_PRIVATE_KEY}}
+        port: ${{ secrets.PORT }}
+        command_timeout: 30m
+        script: | 
+          echo "Nice Job!!!"
