@@ -18,4 +18,4 @@ jobs:
         script: | 
           cd ~/droplet-deploy
           git pull origin master
-          echo "Nice Job!!!"
+          echo "That worked hopefully"
